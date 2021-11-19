@@ -31,6 +31,7 @@ html {
 
 body {
   background: var(--veryDarkBlueDark);
+  color: var(--white);
   padding: 0;
   margin: 0;
   max-width: 1460px;
