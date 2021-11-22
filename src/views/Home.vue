@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <div class="searchBar">
+  <section class="home">
+    <header class="searchBar">
       <div class="searchField" :class="theme === true ? 'dark' : 'light'">
         <img
           v-if="theme === true"
@@ -29,8 +29,8 @@
         <option value="europe">Europe</option>
         <option value="oceania">Oceania</option>
       </select>
-    </div>
-    <div class="cards">
+    </header>
+    <article class="cards">
       <MapCard
         v-for="country in countries"
         :key="country.cca3"
@@ -40,8 +40,8 @@
         :capital="country.capital"
         :flag="country.flags.svg"
       />
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script>

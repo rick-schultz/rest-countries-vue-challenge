@@ -1,5 +1,5 @@
 <template>
-  <div id="nav" :class="theme === true ? 'dark' : 'light'">
+  <nav id="nav" :class="theme === true ? 'dark' : 'light'">
     <router-link class="event-link" :to="{ name: 'Home' }">
       <h1>Where in the world?</h1>
     </router-link>
@@ -17,7 +17,7 @@
       <button v-if="theme === true">Light Mode</button>
       <button v-else>Dark Mode</button>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -86,6 +86,10 @@ export default {
 }
 
 @media screen and (max-width: 570px) {
+  .light {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
   #nav {
     padding: 1rem;
 

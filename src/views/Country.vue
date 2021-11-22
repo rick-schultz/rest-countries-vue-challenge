@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
+  <section class="home">
     <router-link class="event-link" :to="{ name: 'Home' }">
-      <div class="backButton" :class="theme === true ? 'dark' : 'light'">
+      <header class="backButton" :class="theme === true ? 'dark' : 'light'">
         <img
           v-if="theme === true"
           src="@/assets/keyboard_backspace_white_24dp.svg"
@@ -13,9 +13,9 @@
           alt="arrow back"
         />
         <p>Back</p>
-      </div>
+      </header>
     </router-link>
-    <div class="countryBox">
+    <article class="countryBox">
       <img
         :src="countries[0].flags.svg"
         :alt="name + ' flag'"
@@ -90,8 +90,8 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script>
