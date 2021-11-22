@@ -14,7 +14,8 @@
         src="@/assets/nightlight_round_black_24dp.svg"
         alt="moon icon"
       />
-      <button>Dark Mode</button>
+      <button v-if="theme === true">Light Mode</button>
+      <button v-else>Dark Mode</button>
     </div>
   </div>
 </template>
